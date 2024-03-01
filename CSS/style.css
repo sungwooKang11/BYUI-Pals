@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
 
-h1, p, span{
+:root {
+    --primary-color: #0584ff;
+    --secondary-color: #F4D35E;
+    --accent1-color: #CE796B;
+    --accent2-color: #fff;
+
+    --heading-font: "Exo";
+    --paragraph-font: "Exo" sans-serif;
+}
+
+* {
     font-family: "Exo";
     margin: 0;
 }
@@ -45,6 +55,27 @@ a {
     color: #fff;
 }
 
+.login-div {
+    width: 220px;
+    height: 65px;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 730px;
+    cursor: pointer;
+}
+.login-btn {
+    border: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: "Exo";
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
 main {
     width: 100%;
     max-height: 2160px;
@@ -68,7 +99,6 @@ main {
     gap: 50px;
 }
 .banner_span {
-    font-family: "Archivo", sans-serif;
     font-size: 50px;
     font-weight: 500;
     color: #328dff;
