@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --primary-color: #0584ff;
-    --secondary-color: #F4D35E;
-    --accent1-color: #CE796B;
-    --accent2-color: #fff;
+    --primary-color: #3C91E6;
+    --secondary-color: #094074;
+    --accent1-color: #A0CDF8;
+    --accent2-color: #EBEBEB;
 
     --heading-font: "Exo";
     --paragraph-font: "Exo" sans-serif;
@@ -15,8 +15,6 @@
     margin: 0;
 }
 
-
-
 body {
     width: 100%;
     height: 100%;
@@ -25,19 +23,23 @@ body {
 
 header {
     width: 100%;
-    height: 120px;
-    display: flex;
-    align-items: center;  
-    background-color: #0584FF;  
+    height: 150px;
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 122px 250px;
+    align-items: center;
 }
 
-#logo-title {
-    width: auto;
+.logo-div {
+    width: 250px;
     height: auto;
-    margin-left: 50px;
-    font-size: 70px;
-    font-weight: bold;
-    color: #fff;
+    cursor: pointer;
+}
+.logo-link {
+    cursor: pointer;
+}
+.logo {
+    width: 250px;
 }
 
 nav {
@@ -56,14 +58,13 @@ a {
 }
 
 .login-div {
-    width: 220px;
-    height: 65px;
+    width: 180px;
+    height: 50px;
     background-color: #fff;
-    border-radius: 15px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 730px;
     cursor: pointer;
 }
 .login-btn {
@@ -71,7 +72,7 @@ a {
     padding: 0;
     background-color: #fff;
     font-family: "Exo";
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     cursor: pointer;
 }
