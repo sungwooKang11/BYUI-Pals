@@ -13,6 +13,7 @@
 * {
     font-family: "Exo";
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -47,7 +48,7 @@ nav {
     width: 500px;
     grid-column: 3;
 }
-a {
+#nav-menu {
     padding: 20px;
     text-decoration: none;
     color: #454545;
@@ -84,7 +85,7 @@ main {
     width: 100%;
     max-height: 2160px;
     display: grid;
-    grid-template-columns: 136.5px 290px 816px 477px 136.5px;
+    grid-template-columns: 1fr 290px 816px 477px 1fr;
     grid-template-rows: 80px 816px 583px 441px 80px;
     grid-gap: 32px;
 }
@@ -98,6 +99,33 @@ main {
     height: 662px;
     grid-column: 2/ 3;
     grid-row: 2/ 3;
+}
+#menus {
+    width: 100%;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+#menu-icon {
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-btn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.menu-link {
+    margin-left: 20px;
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 .group-div {

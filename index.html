@@ -12,10 +12,10 @@
             <img src="Img/I-Pals white underline logo transparent background.png" alt="" class="logo">
         </div>
         <nav id="nav">
-            <a href="index.html">Home</a>
-            <a href="group.html">Group</a>
-            <a href="trade.html">Trade</a>
-            <a href="carpool.html">Carpool</a>
+            <a id="nav-menu" href="index.html">Home</a>
+            <a id="nav-menu" href="group.html">Group</a>
+            <a id="nav-menu" href="trade.html">Trade</a>
+            <a id="nav-menu" href="carpool.html">Carpool</a>
         </nav>
         <div class="login-div">
             <button class="login-btn" type="button" onclick="location.href='sign-in.html'">Log in | Sign in</button>
@@ -23,12 +23,31 @@
     </header>
     <main class="main-grid">
         <div id="main-divs" class="side-menu">
-            <div id="menu"></div>
-            <div id="menu"></div>
-            <div id="menu"></div>
-            <div id="menu"></div>
-            <div id="menu"></div>
-            <div id="menu"></div>
+            <div id="menus">
+                <i id="menu-icon" class="fa-solid fa-user"></i>
+                <a href="#" class="menu-link">Profile</a>
+            </div>
+            <div id="menus">
+                <i id="menu-icon" class="fa-solid fa-house"></i>
+                <a href="index.html" class="menu-link">Home</a>
+            </div>
+            <div id="menus">
+                <i id="menu-icon" class="fa-solid fa-user-group"></i>
+                <a href="group.html" class="menu-link">Group</a>
+            </div>
+            <div id="menus">
+                <i id="menu-icon" class="fa-solid fa-right-left"></i>
+                <a href="trade.html" class="menu-link">Trade</a>
+            </div>
+            <div id="menus">
+                <i id="menu-icon" class="fa-solid fa-car-side"></i>
+                <a href="carpool.html" class="menu-link">Carpool</a>
+            </div>
+            <div id="menus">
+                <i id="menu-icon" class="fa-solid fa-calendar-check"></i>
+                <a href="https://ibelong.byui.edu/events" class="menu-link">Events</a>
+            </div>
+
         </div>
         <div id="main-divs" class="group-div"></div>
         <div id="main-divs" class="event-div"></div>
@@ -53,5 +72,7 @@
             <p class="copyright">BYUI-Pals © 2024</p>
         </footer>
     </div>
+
+    <script src="https://kit.fontawesome.com/a7f7ac6be1.js" crossorigin="anonymous"></script>
 </body>
 </html>
