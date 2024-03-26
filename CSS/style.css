@@ -131,6 +131,106 @@ main {
 .group-div {
     grid-column: 3/ 4;
     grid-row: 2/ 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 210px);
+    grid-template-rows: 60px 245px 245px;
+    grid-gap: 50px;
+    justify-content: center;
+}
+.group-header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    grid-column: 1/ 4;
+}
+
+#group-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.group-div-tit {
+    font-size: 30px;
+}
+.group-searchbar {
+    width: 330px;
+    height: 55px;
+    background-color: #ececec;
+    margin-left: 210px;
+    border-radius: 10px;
+}
+.group-search-input {
+    width: 280px;
+    height: 55px;
+    background-color: #ececec;
+    border: 0;
+    margin-left: 15px;
+    outline: none;
+    font-size: 20px;
+}
+.group-search-input::placeholder {
+    font-size: 20px;
+}
+#group-searchicon {
+    color: #3C91E6;
+}
+
+.group-content {
+    width: 210px;
+    height: 245px;
+    background-color: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.group-img-div {
+    width: 180px;
+    height: 143px;
+    background-color: #bdbdbd;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.group-name {
+    font-size: 15px;
+    margin-top: 13px;
+}
+.group-joinbtn {
+    width: 80px;
+    height: 26px;
+    background-color: var(--accent1-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13px;
+    border-radius: 5px;
+}
+.group-join {
+    text-decoration: none;
+    color: #fff;
+}
+
+.group-morebtn {
+    width: 120px;
+    height: 55px;
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    grid-column: 2/ 3;
+}
+.group-morebtn a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
 }
 
 .event-div {
