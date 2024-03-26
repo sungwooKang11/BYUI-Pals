@@ -209,6 +209,7 @@ main {
     align-items: center;
     margin-top: 13px;
     border-radius: 5px;
+    cursor: pointer;
 }
 .group-join {
     text-decoration: none;
