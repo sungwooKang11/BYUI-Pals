@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/carpool.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/styles/group.css')}}">
     <title>Document</title>
 </head>
 <body>
     <header>
         <h1 id="logo-title">BYUi-Pals</h1>
         <nav id="nav">
-            <a href="index.html">Home</a>
-            <a href="group.html">Group</a>
-            <a href="trade.html">Trade</a>
-            <a href="carpool.html">Carpool</a>
+            <a href="/">Home</a>
+            <a href="group">Group</a>
+            <a href="trade">Trade</a>
+            <a href="carpool">Carpool</a>
         </nav>
     </header>
-    <h1>Carpool</h1>
+    <h1>Group</h1>
+
+    <div class="groups-container">
+        <h1> Add a Group</h1>
+        <form>
+            <label for="group-name">Group Name</label>
+            <input type="text" placeholder="Group Name">
+            <label for="group-description">Group Description</label>
+            <input type="text" placeholder="Group Description">
+            <button type="submit">Add Group</button>
+        </form>
+    </div>
 
     <div class="footer-basic">
         <footer>

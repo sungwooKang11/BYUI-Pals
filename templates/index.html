@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='../static/styles/style.css')}}">
     <title>BYUI-Pals</title>
 </head>
 <body>
     <header>
         <h1 id="logo-title">BYUi-Pals</h1>
         <nav id="nav">
-            <a href="index.html">Home</a>
-            <a href="group.html">Group</a>
-            <a href="trade.html">Trade</a>
-            <a href="carpool.html">Carpool</a>
+            <a href="/">Home</a>
+            <a href="group">Group</a>
+            <a href="trade">Trade</a>
+            <a href="carpool">Carpool</a>
         </nav>
         <div class="login-div">
             <button class="login-btn">Log in | Sign in</button>
@@ -26,7 +26,7 @@
                     <span class="banner_span">Make your Connection </span>
                     <span class="banner_span">In BYUI-Pals</span>
                 </div>
-                <img class="bannerImg" src="img/connection.png" alt="img">
+                <img class="bannerImg" src="/static/img/connection.png" alt="img">
             </div>
         </section>
         <section class="banner">
@@ -35,7 +35,7 @@
                     <span class="banner_span">Find your group </span>
                     <span class="banner_span">In BYUI-Pals</span>
                 </div>
-                <img class="bannerImg" src="img/group.png" alt="img">
+                <img class="bannerImg" src="/static/img/group.png" alt="img">
             </div>
         </section>
     </main>
